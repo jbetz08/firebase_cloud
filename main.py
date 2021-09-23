@@ -3,11 +3,12 @@ from firebase_admin import credentials
 from firebase_admin import firestore 
 
 #use a service account
-cred = credentials.Certificate('scotts-totts-firebase-ce5beb7102d0.json')
+cred = credentials.Certificate('trivia-web-app-651a1-firebase-adminsdk-6cgid-564cb084e2.json')
 firebase_admin.initialize_app(cred)
 
 db = firestore.client()
 #creating a new collection and a document
+'''
 doc_ref = db.collection(u'users').document(u'alovelace')
 doc_ref.set({
     u'first': u'Ada',
@@ -29,5 +30,13 @@ docs = users_ref.stream()
 for doc in docs:
     print(f'{doc.id} => {doc.to_dict()}')
 
-
+'''
 print("Firebase") 
+
+doc_ref = db.collection(u'test').document(u'bob')
+
+doc = doc_ref.get()
+if doc.exists:
+    print(f'Document data: {doc.to_dict()}')
+else:
+    print(u'No such document!')
