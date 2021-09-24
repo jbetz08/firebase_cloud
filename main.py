@@ -40,3 +40,14 @@ if doc.exists:
     print(f'Document data: {doc.to_dict()}')
 else:
     print(u'No such document!')
+
+
+data = {
+    "id" : 4,
+    "email" : "yebassabiya@gmail.com",
+    "married" : False
+}
+
+db.collection("users").document("biya_yebassa").set(data)
+
+
