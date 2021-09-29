@@ -50,4 +50,13 @@ data = {
 
 db.collection("users").document("biya_yebassa").set(data)
 
+j_mname = {
+    "middle name" : "Frank",
+    "id" : 1,
+    "married" : False,
+    "email" : "jbetzsold@gmail.com"
+}
+
+db.collection("users").document("josh_betzsold").set(j_mname)
+
 
