@@ -59,4 +59,9 @@ j_mname = {
 
 db.collection("users").document("josh_betzsold").set(j_mname)
 
+django_resource = {
+    "url" : "https://docs.djangoproject.com/en/3.2/intro/tutorial01/"
+}
+
+db.collection("resources").document("django_resource").set(django_resource)
 
