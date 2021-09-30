@@ -43,3 +43,11 @@ django_resource = {
 
 db.collection("resources").document("django_resource").set(django_resource)
 
+
+jacob_morgan = {
+    "middle name" : "David",
+    "married" : True,
+    "candy" : True
+}
+
+db.collection("users").document("jacob_morgan").set(jacob_morgan)
