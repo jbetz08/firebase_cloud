@@ -11,22 +11,23 @@ db = firestore.client()
 
 print("Firebase") 
 
+#retrieve data
 doc_ref = db.collection(u'test').document(u'bob')
 
-doc = doc_ref.get()
+doc = doc_ref.get() #retrieve data method
 if doc.exists:
     print(f'Document data: {doc.to_dict()}')
 else:
     print(u'No such document!')
 
-
+# inserting data
 data = {
     "id" : 4,
     "email" : "yebassabiya@gmail.com",
     "married" : False
 }
 
-db.collection("users").document("biya_yebassa").set(data)
+db.collection("users").document("biya_yebassa").set(data) 
 
 j_mname = {
     "middle name" : "Frank",
@@ -51,3 +52,9 @@ jacob_morgan = {
 }
 
 db.collection("users").document("jacob_morgan").set(jacob_morgan)
+
+# delete data
+db.collection("users").document("jacob_morgan").delete()
+
+# update data
+db.collection("users").document("josh_betzsold").update({"married" : True})
