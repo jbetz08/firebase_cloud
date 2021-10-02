@@ -25,13 +25,12 @@ Libraries used: firebase_admin and 'credentials' and 'firestore' libraries from 
 
 # Useful Websites
 
-{Make a list of websites that you found helpful in this project}
 * [towards data science](https://towardsdatascience.com/nosql-on-the-cloud-with-python-55a1383752fc)
-* [Web Site Name](http://url.link.goes.here)
+* [Cloud DB workshop](https://byui-cse.github.io/cse310-course/workshops/Cloud_DB/CSE310_Workshop_Cloud_DB.pdf)
 
 # Future Work
 
 {Make a list of things that you need to fix, improve, and add in the future.}
-* Item 1
-* Item 2
-* Item 3
+* Clean up unnecessary data
+* Come up with a better structured system for storing data
+* Understand how certain fields are ordered in Firestore
