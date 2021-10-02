@@ -1,10 +1,10 @@
 # Overview
 
-{Important!  Do not say in this section that this is college assignment.  Talk about what you are trying to accomplish as a software engineer to further your learning.}
+The goal of this software was to build a cloud database that will hold data for a trivia web app. I wanted to be more familiar with how cloud data could be stored and manipulated in my personal environment.
 
-{Provide a description the software that you wrote and how it integrates with a Cloud Database.  Describe how to use your program.}
+I integrated the firebase admin and firestore libraries from Google in the python languages. I have a JSON file that holds secret service account information that connects to my python code as well. This allows my Firestore database to connect to my personal environment and allow me to enter data in through my python code. To add any data you want, you first create a variable that holds dictionary data of with a key value pair. Then you set that data to specific collection and document data that you want with the set() method. There are other methods you can use to manipulate the data like update() and delete() and you can retrieve data using get().
 
-{Describe your purpose for writing this software.}
+My purpose for writing this software is to understand the fundamentals of cloud databases and be more confident in understanding databases in general as well. 
 
 {Provide a link to your YouTube demonstration.  It should be a 4-5 minute demo of the software running, a walkthrough of the code, and a view of the cloud database.}
 
@@ -12,20 +12,21 @@
 
 # Cloud Database
 
-{Describe the cloud database you are using.}
+I'm using Firestore database from Google. Google provides two cloud database platforms: Firebase, and Firestore. I was recommended to use Firestore and so far it's been great to use!
 
-{Describe the structure of the database that you created.}
+This database has a collection/table of some potential users which so far consist of fellow classmates and a few pieces of information from them. Ideally this user table would consist of login credentials and pertinant information for whatever service this would provide. This will be scaled up in the future to be used for a trivia web app to store login credentials and high score data.
 
 # Development Environment
 
-{Describe the tools that you used to develop the software}
+Developer tools consist of Visual Studio Code, github, and Google Firestore
 
-{Describe the programming language that you used and any libraries.}
+Languages used: Python 3.9
+Libraries used: firebase_admin and 'credentials' and 'firestore' libraries from firebase_admin
 
 # Useful Websites
 
 {Make a list of websites that you found helpful in this project}
-* [Web Site Name](http://url.link.goes.here)
+* [towards data science](https://towardsdatascience.com/nosql-on-the-cloud-with-python-55a1383752fc)
 * [Web Site Name](http://url.link.goes.here)
 
 # Future Work
